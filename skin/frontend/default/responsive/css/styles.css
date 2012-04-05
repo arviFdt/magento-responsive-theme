@@ -302,3 +302,21 @@ ul, ol {
     top: 0;
     width: auto;
 }
+
+.product-view .product-img-box {
+    float: left;
+    width: 267px;
+}
+
+.product-view #image {
+    width: 267px;
+}
+
+.product-view .product-shop {
+    float: right;
+}
+
+.product-view .price {
+    font-size: 16px;
+    font-weight: bold;
+}
