@@ -325,7 +325,7 @@ ul, ol {
     font-weight: bold;
 }
 
-/* Sidebar search form */
+/* sidebar block search */
 .form-search label { display: none; }
 .form-search input { width: 154px; }
 @media (max-width: 1200px) {
@@ -340,3 +340,8 @@ ul, ol {
     .form-search button { width: 100%; }
 }
 #search_mini_form { margin: 0; }
+
+/* sidebar block poll */
+.block-poll label { display: inline; }
+.block-poll .actions { margin-top: 9px; }
+.block-poll .label { background: none; }
