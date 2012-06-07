@@ -207,7 +207,6 @@ ul, ol {
   -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
   background-color: #e6e6e6;
-  background-color: #d9d9d9 \9;
   outline: 0;
 }
 .button.disabled,
@@ -221,14 +220,6 @@ ul, ol {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/*
-.sidebar input,
-.sidebar textarea,
-.sidebar select,
-.sidebar .uneditable-input {
-    width: 100%;
-}
-*/
 .block, .form-language {
   min-height: 20px;
   padding: 19px;
@@ -244,20 +235,8 @@ ul, ol {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 980px) {
+@media (max-width: 979px) {
     .block { padding: 9px; }
-}
-
-.sorter label {
-    display: inline;
-}
-
-.sorter  .view-mode {
-    padding-top: 8px;
-}
-
-.sort-by select {
-    width: 180px;
 }
 
 /* modal */
@@ -344,4 +323,22 @@ ul, ol {
 /* sidebar block poll */
 .block-poll label { display: inline; }
 .block-poll .actions { margin-top: 9px; }
-.block-poll .label { background: none; }
+.block-poll .label { background: none; color: inherit; text-shadow: none; }
+
+/* pager */
+.toolbar { border: 1px solid #ddd; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding:9px; margin: 15px 0; }
+.toolbar label { display: inline; }
+.toolbar p.amount { text-align: center; padding-top: 8px; }
+.toolbar .limiter { float: right; }
+.toolbar .limiter select { width: 47px; }
+.toolbar .pages strong { display: none; }
+.toolbar .pagination { margin: 0; float: left; }
+.toolbar .pagination a { -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; padding: 0 11px; border-left-width: 0; line-height: 28px; }
+.toolbar .pagination li.current { display: inline-block; padding: 0 11px; line-height: 28px; text-decoration: none; border: 1px solid #ddd; border-left-width: 0; float: left; }
+.toolbar .sorter .view-mode { float: left; margin: 0; }
+.toolbar .sorter .view-mode a { line-height: 28px; }
+.toolbar .sorter .sort-by { float: right; }
+.toolbar .sorter .sort-by select { width: 140px; margin-bottom: 0; }
+@media (max-width: 1200px) {
+    .toolbar p.amount { display: none; }
+}
