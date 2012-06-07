@@ -127,4 +127,11 @@ document.observe('dom:loaded', function() {
             item.addClassName('span2');
         });
     });
+
+    // products list modifications
+    $$('.products-list li.item').each(function(item) {
+        var clearer = document.createElement('div');
+        clearer.setAttribute('style', 'clear:both');
+        item.insert(clearer);
+    });
 });
