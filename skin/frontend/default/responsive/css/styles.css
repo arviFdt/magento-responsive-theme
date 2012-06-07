@@ -126,12 +126,6 @@ ul, ol {
     left: 100px;
 }
 
-.footer {
-    border-top: 1px solid #E5E5E5;
-    margin-top: 45px;
-    padding: 35px 0 36px;
-}
-
 .btn-large {
     width: 100%;
 }
@@ -377,3 +371,7 @@ ul, ol {
 .products-list .desc .link-learn { font-size:11px; }
 .products-list .add-to-links li { display:inline; }
 .products-list .add-to-links .separator { display:inline; margin:0 2px; }
+
+/* footer */
+.footer { text-align: center; }
+.footer li { display: inline-block; padding-right: 15px; }

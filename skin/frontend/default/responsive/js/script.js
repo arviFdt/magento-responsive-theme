@@ -7,7 +7,7 @@ document.observe('dom:loaded', function() {
                 item.toggleClassName('hidden-phone');
             }
         });        
-    }
+    };
     
     hideSidebarItemsForPhones('.col-left > div');
     hideSidebarItemsForPhones('.col-right > div');
@@ -133,5 +133,10 @@ document.observe('dom:loaded', function() {
         var clearer = document.createElement('div');
         clearer.setAttribute('style', 'clear:both');
         item.insert(clearer);
+    });
+
+    // footer modifications
+    $$('.footer-container').each(function(footer){
+        footer.outerHTML = '<footer class="footer-container">' + footer.innerHTML + '</footer>';
     });
 });
