@@ -46,11 +46,11 @@ ul, ol {
         float: left;
         width:100%;
     }
-    
+
     .subnav {
         display: none;
     }
-    
+
     section {
         padding: 0;
     }
@@ -217,7 +217,7 @@ ul, ol {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.block, .form-language {
+.block, .form-language, .content {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -301,6 +301,14 @@ ul, ol {
     font-weight: bold;
 }
 
+/* general input */
+@media (max-width: 676px) {
+    input.input-text { width: 154px; }
+}
+@media (max-width: 480px) {
+    input.input-text { width: 104px; }
+}
+
 /* sidebar block search */
 .form-search label { display: none; }
 .form-search input { width: 154px; }
@@ -355,11 +363,11 @@ ul, ol {
 }
 @media (max-width: 480px) {
     .products-grid .span2 { float: none; width: auto; margin-left: 0; }
-    .row { margin-left: 0px; }
+    .row { margin-left: 0; }
 }
 
 /* products list */
-.products-list li.item { border-bottom:1px solid #d9ddd3; padding:12px 0px; }
+.products-list li.item { border-bottom:1px solid #d9ddd3; padding:12px 0; }
 .products-list li.item.last { border-bottom:0; }
 .products-list .product-image { float:left; width:135px; height:135px; margin:0 0 10px; }
 .products-list .product-shop { margin-left:150px; }
@@ -375,3 +383,22 @@ ul, ol {
 /* footer */
 .footer { text-align: center; }
 .footer li { display: inline-block; padding-right: 15px; }
+
+/* Content Columns */
+.col2-set .col-1 { float:left; width:48.5%; }
+.col2-set .col-2 { float:right; width:48.5%; }
+.col2-set .col-narrow { width:32%; }
+.col2-set .col-wide { width:65%; }
+
+/* Page Heading */
+.page-title { margin:0 0 15px; }
+.page-title h1, .page-title h2 { margin:0; font-size:20px; color:#0a263c; font-weight: normal; }
+
+/* Account Login/Create Pages */
+.account-login .content { min-height:240px; padding-bottom: 30px; }
+.account-login .content h2 { font-size:13px; margin:0 0 14px; border-bottom:1px solid #ddd; text-transform:uppercase; font-weight: normal; }
+.account-login .buttons-set { position: relative; top: -65px; padding: 0 19px; }
+@media (max-width: 480px) {
+    .account-login .content { min-height:300px; }
+    .registered-users .buttons-set { top: -84px; }
+}
