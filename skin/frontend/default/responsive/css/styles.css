@@ -217,7 +217,7 @@ ul, ol {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.block, .form-language, .content {
+.block, .form-language, .content, .fieldset {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -300,6 +300,16 @@ ul, ol {
     font-size: 16px;
     font-weight: bold;
 }
+
+/* tools */
+.f-left, .left { float:left !important; }
+.f-right, .right { float:right !important; }
+
+/* buttons sets */
+.buttons-set { clear:both; text-align:right; }
+.buttons-set p.required { margin:0 0 10px; }
+.buttons-set .back-link { float:left; margin:0; }
+.buttons-set button.button { float:right; margin-left:5px; }
 
 /* general input */
 @media (max-width: 676px) {
@@ -402,3 +412,7 @@ ul, ol {
     .account-login .content { min-height:300px; }
     .registered-users .buttons-set { top: -84px; }
 }
+
+/* Forgot Password */
+.customer-account-forgotpassword .fieldset { padding-bottom: 60px; }
+.customer-account-forgotpassword .buttons-set { position: relative; top: -92px; padding: 0 19px; }
